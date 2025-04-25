@@ -8,9 +8,9 @@ router = APIRouter(prefix="/user")
 
 
 @router.get("/")
-def user_home():
+def home_user():
     return "User Home"
 
 @router.post("/register")
-def user_register(user: User):
+def register_user(user: User):
     return user_register(user)
